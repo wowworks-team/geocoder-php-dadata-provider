@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "733242c0205c6d50a417d26c5cf7d241",
+    "content-hash": "390e3b87be947f7b0208a2562b339ad9",
     "packages": [
         {
             "name": "geocoder-php/bing-maps-provider",

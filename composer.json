@@ -1,5 +1,8 @@
 {
-    "name": "glendemon/dadata",
+    "name": "wowworks/geocoder-php-dadata-provider",
+    "description": "Integration with Dadata suggestions API.",
+    "keywords": ["dadata", "wowworks", "dadata"],
+    "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
         {
@@ -7,7 +10,6 @@
             "email": "it@wowworks.ru"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "geocoder-php/bing-maps-provider": "^4.0",
         "geocoder-php/cache-provider": "^4.1",
