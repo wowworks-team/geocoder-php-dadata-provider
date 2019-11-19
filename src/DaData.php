@@ -2,6 +2,7 @@
 
 namespace Dadata;
 
+use Dadata\Exception\NotImplementedException;
 use Dadata\Model\DaDataAddress;
 use DadataSuggestions\DadataSuggestionsService;
 use DadataSuggestions\Response;
@@ -46,7 +47,7 @@ class DaData implements Provider
      */
     public function reverseQuery(ReverseQuery $query): Collection
     {
-        return new AddressCollection([]);
+        throw new NotImplementedException();
     }
 
     /**
