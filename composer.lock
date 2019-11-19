@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6c79a31d7b16a698534c50c0c75b818",
+    "content-hash": "b2084b21c3344db4a77d8ffd9e7b5b61",
     "packages": [
         {
             "name": "glendemon/dadata-suggestions",
@@ -1915,7 +1915,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.6.0"
+    },
     "platform-dev": {
         "ext-curl": "*"
     }

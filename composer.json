@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "php": ">=5.6.0",
         "willdurand/geocoder": "^4.2",
         "glendemon/dadata-suggestions": "^1.0"
     },
