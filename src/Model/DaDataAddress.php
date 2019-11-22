@@ -1,6 +1,6 @@
 <?php
 
-namespace Dadata\Model;
+namespace Wowworks\Dadata\Model;
 
 use Geocoder\Model\Address;
 

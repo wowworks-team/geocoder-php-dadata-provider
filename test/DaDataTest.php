@@ -1,13 +1,13 @@
 <?php
 
 use DadataSuggestions\DadataSuggestionsService;
-use Dadata\DaData;
+use Wowworks\Dadata\DaData;
 use DadataSuggestions\Response;
 use Geocoder\Model\AddressCollection;
 use Geocoder\Query\ReverseQuery;
 use Geocoder\Query\GeocodeQuery;
 use Geocoder\Model\Coordinates;
-use Dadata\Exception\NotImplementedException;
+use Wowworks\Dadata\Exception\NotImplementedException;
 
 class DaDataTest extends \PHPUnit\Framework\TestCase
 {

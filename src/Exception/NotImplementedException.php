@@ -1,6 +1,6 @@
 <?php
 
-namespace Dadata\Exception;
+namespace Wowworks\Dadata\Exception;
 
 class NotImplementedException extends \RuntimeException
 {

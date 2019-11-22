@@ -1,9 +1,9 @@
 <?php
 
-namespace Dadata;
+namespace Wowworks\Dadata;
 
-use Dadata\Exception\NotImplementedException;
-use Dadata\Model\DaDataAddress;
+use Wowworks\Dadata\Exception\NotImplementedException;
+use Wowworks\Dadata\Model\DaDataAddress;
 use DadataSuggestions\DadataSuggestionsService;
 use DadataSuggestions\Response;
 use Geocoder\Collection;
