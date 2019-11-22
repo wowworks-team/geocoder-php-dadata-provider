@@ -27,7 +27,7 @@ Example:
 $service = new \DadataSuggestions\DadataSuggestionsService();
 $service->setUrl('https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/');
 $service->setToken('...');
-$daData = new \Dadata\Dadata($service);
+$daData = new \Wowworks\Dadata\Dadata($service);
 $data = $daData->geocodeQuery(\Geocoder\Query\GeocodeQuery::create('г Москва, улица Академика Королева, дом 15, корп. 2'));
 ```
 
