@@ -182,8 +182,14 @@ class DaData implements Provider
 
             $builder->setStreetNumber($addressInfo->house ?? null);
             $builder->setStreetName($addressInfo->street ?? null);
-            $builder->setSubLocality($addressInfo->city_with_type ?? null);
-            $builder->setLocality($addressInfo->region_with_type ?? null);
+            $builder->setSubLocality($addressInfo->city_district_with_type ?? null);
+            $builder->setLocality($addressInfo->city_with_type ?? null);
+            if (!empty($addressInfo->region_with_type)) {
+                $builder->addAdminLevel(1, $addressInfo->region_with_type, $addressInfo->region_iso_code);
+            }
+            if (!empty($addressInfo->area_with_type)) {
+                $builder->addAdminLevel(2, $addressInfo->area_with_type, $addressInfo->area_fias_id);
+            }
             $builder->setCountry($addressInfo->country ?? null);
             $builder->setCountryCode($addressInfo->country_iso_code ?? null);
 
