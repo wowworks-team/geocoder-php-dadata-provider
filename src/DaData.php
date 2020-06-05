@@ -190,6 +190,9 @@ class DaData implements Provider
             if (!empty($addressInfo->area_with_type)) {
                 $builder->addAdminLevel(2, $addressInfo->area_with_type, $addressInfo->area_fias_id);
             }
+            if (!empty($addressInfo->settlement_with_type)) {
+                $builder->addAdminLevel(3, $addressInfo->settlement_with_type, $addressInfo->settlement_fias_id);
+            }
             $builder->setCountry($addressInfo->country ?? null);
             $builder->setCountryCode($addressInfo->country_iso_code ?? null);
 
