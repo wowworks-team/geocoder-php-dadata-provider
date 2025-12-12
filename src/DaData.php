@@ -2,16 +2,17 @@
 
 namespace Wowworks\Dadata;
 
-use Wowworks\Dadata\Exception\NotImplementedException;
-use Wowworks\Dadata\Model\DaDataAddress;
 use DadataSuggestions\DadataSuggestionsService;
 use DadataSuggestions\Response;
+use DadataSuggestions\ResponseData;
 use Geocoder\Collection;
 use Geocoder\Model\AddressBuilder;
 use Geocoder\Model\AddressCollection;
 use Geocoder\Provider\Provider;
 use Geocoder\Query\GeocodeQuery;
 use Geocoder\Query\ReverseQuery;
+use Wowworks\Dadata\Exception\NotImplementedException;
+use Wowworks\Dadata\Model\DaDataAddress;
 
 /**
  * Class DaData
@@ -180,7 +181,7 @@ class DaData implements Provider
 
             $builder->setCoordinates((float)$addressInfo->geo_lat, (float)$addressInfo->geo_lon);
 
-            $builder->setStreetNumber($addressInfo->house ?? null);
+            $builder->setStreetNumber($this->generateStreetNumber($addressInfo));
             $builder->setStreetName($addressInfo->street ?? null);
             $builder->setSubLocality($addressInfo->city_district_with_type ?? null);
             $builder->setLocality($addressInfo->city_with_type ?? null);
@@ -203,5 +204,20 @@ class DaData implements Provider
         }
 
         return new AddressCollection($locations);
+    }
+
+    private function generateStreetNumber(ResponseData $addressInfo): ?string
+    {
+        $streetNumber = ($addressInfo->house ?? null);
+
+        if (!empty($addressInfo->block_type)) {
+            $streetNumber .= $addressInfo->block_type;
+        }
+
+        if (!empty($addressInfo->block)) {
+            $streetNumber .= $addressInfo->block;
+        }
+
+        return $streetNumber;
     }
 }
