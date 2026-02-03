@@ -42,7 +42,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.2'
+          php-version: '7.4.0'
           coverage: xdebug
       - name: Install dependencies
         uses: php-actions/composer@v6
