@@ -5,6 +5,7 @@ Geocoder DaData adapter
 
 Geocoder DaData adapter. Integration with Dadata suggestions API.
 
+![Code Coverage Badge](./badge.svg)
 [![Latest Stable Version](https://poser.pugx.org/wowworks/geocoder-php-dadata-provider/v/stable)](https://packagist.org/packages/wowworks/geocoder-php-dadata-provider)
 [![Total Downloads](https://poser.pugx.org/wowworks/geocoder-php-dadata-provider/downloads)](https://packagist.org/packages/wowworks/geocoder-php-dadata-provider)
 [![Latest Unstable Version](https://poser.pugx.org/wowworks/geocoder-php-dadata-provider/v/unstable)](https://packagist.org/packages/wowworks/geocoder-php-dadata-provider)
