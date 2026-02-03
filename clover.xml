@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1770121618">
+  <project timestamp="1770121618">
+    <package name="Wowworks\Dadata">
+      <file name="/home/runner/work/geocoder-php-dadata-provider/geocoder-php-dadata-provider/src/DaData.php">
+        <class name="Wowworks\Dadata\DaData" namespace="Wowworks\Dadata" fullPackage="Dadata" package="Dadata">
+          <metrics complexity="14" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="11" elements="44" coveredelements="15"/>
+        </class>
+        <line num="31" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="33" type="stmt" count="3"/>
+        <line num="34" type="stmt" count="3"/>
+        <line num="39" type="method" name="geocodeQuery" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="49" type="method" name="reverseQuery" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="57" type="method" name="getName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="59" type="stmt" count="1"/>
+        <line num="69" type="method" name="executeQuery" visibility="private" complexity="6" crap="24.97" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="172" type="stmt" count="1"/>
+        <line num="173" type="stmt" count="1"/>
+        <line num="176" type="stmt" count="0"/>
+        <line num="177" type="stmt" count="0"/>
+        <line num="178" type="stmt" count="0"/>
+        <line num="180" type="stmt" count="0"/>
+        <line num="182" type="stmt" count="0"/>
+        <line num="184" type="stmt" count="0"/>
+        <line num="185" type="stmt" count="0"/>
+        <line num="186" type="stmt" count="0"/>
+        <line num="187" type="stmt" count="0"/>
+        <line num="188" type="stmt" count="0"/>
+        <line num="189" type="stmt" count="0"/>
+        <line num="191" type="stmt" count="0"/>
+        <line num="192" type="stmt" count="0"/>
+        <line num="194" type="stmt" count="0"/>
+        <line num="195" type="stmt" count="0"/>
+        <line num="197" type="stmt" count="0"/>
+        <line num="198" type="stmt" count="0"/>
+        <line num="201" type="stmt" count="0"/>
+        <line num="202" type="stmt" count="0"/>
+        <line num="203" type="stmt" count="0"/>
+        <line num="206" type="stmt" count="0"/>
+        <line num="209" type="method" name="generateStreetNumber" visibility="private" complexity="4" crap="20" count="0"/>
+        <line num="211" type="stmt" count="0"/>
+        <line num="213" type="stmt" count="0"/>
+        <line num="214" type="stmt" count="0"/>
+        <line num="217" type="stmt" count="0"/>
+        <line num="218" type="stmt" count="0"/>
+        <line num="221" type="stmt" count="0"/>
+        <metrics loc="223" ncloc="108" classes="1" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="11" elements="44" coveredelements="15"/>
+      </file>
+    </package>
+    <package name="Wowworks\Dadata\Exception">
+      <file name="/home/runner/work/geocoder-php-dadata-provider/geocoder-php-dadata-provider/src/Exception/NotImplementedException.php">
+        <class name="Wowworks\Dadata\Exception\NotImplementedException" namespace="Wowworks\Dadata\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="7" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="9" type="stmt" count="1"/>
+        <line num="10" type="stmt" count="1"/>
+        <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+    </package>
+    <package name="Wowworks\Dadata\Model">
+      <file name="/home/runner/work/geocoder-php-dadata-provider/geocoder-php-dadata-provider/src/Model/DaDataAddress.php">
+        <class name="Wowworks\Dadata\Model\DaDataAddress" namespace="Wowworks\Dadata\Model" fullPackage="common" package="common">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="40" type="method" name="getPrecision" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="50" type="method" name="withPrecision" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <metrics loc="57" ncloc="36" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="3" loc="291" ncloc="155" classes="3" methods="9" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="13" elements="53" coveredelements="18"/>
+  </project>
+</coverage>

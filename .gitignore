@@ -9,3 +9,5 @@
 
 #php-cs-fixer
 .php_cs.cache
+
+.phpunit.result.cache

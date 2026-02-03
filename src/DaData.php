@@ -179,7 +179,7 @@ class DaData implements Provider
 
             $addressInfo = $item->getData();
 
-            $builder->setCoordinates((float)$addressInfo->geo_lat, (float)$addressInfo->geo_lon);
+            $builder->setCoordinates((float) $addressInfo->geo_lat, (float) $addressInfo->geo_lon);
 
             $builder->setStreetNumber($this->generateStreetNumber($addressInfo));
             $builder->setStreetName($addressInfo->street ?? null);
