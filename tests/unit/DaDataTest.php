@@ -1,14 +1,14 @@
 <?php
 
-namespace unit;
+namespace Wowworks\Dadata\tests\unit;
 
 use DadataSuggestions\DadataSuggestionsService;
-use Wowworks\Dadata\DaData;
 use DadataSuggestions\Response;
 use Geocoder\Model\AddressCollection;
-use Geocoder\Query\ReverseQuery;
-use Geocoder\Query\GeocodeQuery;
 use Geocoder\Model\Coordinates;
+use Geocoder\Query\GeocodeQuery;
+use Geocoder\Query\ReverseQuery;
+use Wowworks\Dadata\DaData;
 use Wowworks\Dadata\Exception\NotImplementedException;
 
 class DaDataTest extends \PHPUnit\Framework\TestCase
