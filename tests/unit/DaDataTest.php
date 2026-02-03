@@ -1,5 +1,7 @@
 <?php
 
+namespace unit;
+
 use DadataSuggestions\DadataSuggestionsService;
 use Wowworks\Dadata\DaData;
 use DadataSuggestions\Response;
