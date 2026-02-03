@@ -1,0 +1,14 @@
+name: CI-CHECKS
+
+on: [push]
+
+jobs:
+  run-phpcs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+      - name: Run PHPCodesniffer
+        run: ./vendor/bin/phpcs -p -s --standard=phpcs.xml src tests
