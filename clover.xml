@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1770113007">
-  <project timestamp="1770113007">
+<coverage generated="1770121148">
+  <project timestamp="1770121148">
     <package name="Wowworks\Dadata">
       <file name="/home/runner/work/geocoder-php-dadata-provider/geocoder-php-dadata-provider/src/DaData.php">
         <class name="Wowworks\Dadata\DaData" namespace="Wowworks\Dadata" fullPackage="Dadata" package="Dadata">
